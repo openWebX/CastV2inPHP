@@ -1,0 +1,30 @@
+{
+  "name": "openwebx/CastV2inPHP",
+  "description": "chromecast functionality",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Jens Reinemuth",
+      "email": "jens@reinemuth.rocks"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Chromecast\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/openWebX/PHPmDNS.git"
+    }
+  ],
+  "require": {
+    "php": ">=7.3.0"
+  },
+  "require-dev": {
+    "openwebx/phpmdns": "dev-master"
+  }
+}

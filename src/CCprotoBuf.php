@@ -1,6 +1,7 @@
 <?php
 
 // Class to represent a protobuf object for a command.
+namespace Chromecast;
 
 class CastMessage {
 
@@ -105,6 +106,3 @@ class CastMessage {
 	}
 
 }
-
-
-?>

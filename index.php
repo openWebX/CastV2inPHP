@@ -7,10 +7,9 @@
 // your chromecast through your firewall. Preferably with port forwarding
 // from a different port address.
 
-require_once("Chromecast.php");
 
 // Create Chromecast object and give IP and Port
-$cc = new Chromecast("217.63.63.259","7019");
+$cc = new \Chromecast\Chromecast("217.63.63.259","7019");
 
 // Launch the Chromecast App
 $cc->launch("87087D10");
@@ -30,7 +29,7 @@ $cc->sendMessage("urn:x-cast:com.chrisridings.piccastr","http://distribution.bbb
 
 // Keep the connection alive with heartbeat
 while (1==1) {
-	$cc->pingpong();
+	$cc->pingpong('PING');
 	sleep(10);
 }
 
